@@ -22,15 +22,13 @@ def mode_increasing(number):
         index = 0
         StatusValide = True
         for element in liste:
-            if int(element) > int(liste[index]):
+            if int(element) > int(element[index])+1:
                 print(f"valid {element}")
                 #StatusValide= True
             else:
                 print(f"huso {element}")    
                 StatusValide = False
-        if StatusValide:
-            validList.append(liste)
-           
+
 
 content = Read_File()
 data_handling(content)
